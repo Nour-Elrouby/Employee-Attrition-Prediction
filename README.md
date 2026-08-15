@@ -1,20 +1,20 @@
-<div align="center">
+# Employee Attrition Prediction
 
-# Employee Attrition Intelligence
-
-### Explainable workforce-risk analysis with LightGBM, SHAP, and Streamlit
+---
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![LightGBM](https://img.shields.io/badge/Model-LightGBM-5B7CFA)](https://lightgbm.readthedocs.io/)
-[![Explainability](https://img.shields.io/badge/Explainability-SHAP-F4B740)](https://shap.readthedocs.io/)
+[![LightGBM](https://img.shields.io/badge/LightGBM-ML-5B7CFA)](https://lightgbm.readthedocs.io/)
+[![SHAP](https://img.shields.io/badge/SHAP-XAI-F4B740)](https://shap.readthedocs.io/)
 
-A machine-learning project that explores employee attrition, compares sampling and
-classification strategies, and provides an interactive risk-estimation interface.
+A machine-learning application for analyzing employee attrition and estimating
+workforce risk. It compares sampling and classification strategies, explains model
+behavior with SHAP, and provides an interactive Streamlit prediction interface.
 
-</div>
-
----
+> [!IMPORTANT]
+> Attrition scores should support—not replace—responsible HR review and human judgment.
+> Never use this prototype as the sole basis for employment decisions, and validate its
+> fairness, calibration, privacy, and legal suitability before real-world use.
 
 ## Overview
 
@@ -110,13 +110,6 @@ The Streamlit app accepts a focused set of employee inputs:
 It returns a risk percentage, a low/moderate/high risk band, and a local contribution
 chart. In that chart, **amber** bars raise the predicted risk and **sapphire** bars lower
 it.
-
-> [!IMPORTANT]
-> This project is an educational decision-support prototype—not an employment decision
-> system. Do not use its output to hire, dismiss, promote, compensate, or otherwise
-> evaluate an individual. Before any real-world use, validate data quality, subgroup
-> fairness, calibration, privacy controls, drift, and applicable employment law. Human
-> review and employee context are essential.
 
 > [!WARNING]
 > The deployed app loads a LightGBM model refitted on SMOTE-balanced data, while the
