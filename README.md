@@ -44,16 +44,7 @@ travel, and employment-history attributes. The prediction target is `Attrition`,
 
 ## Analysis workflow
 
-```mermaid
-flowchart LR
-    A[IBM HR data] --> B[Explore and clean]
-    B --> C[Engineer features]
-    C --> D[Train/test split]
-    D --> E[Class balancing]
-    E --> F[Model comparison]
-    F --> G[SHAP explanations]
-    G --> H[Streamlit app]
-```
+![Employee attrition analysis workflow](assets/workflow.svg)
 
 Engineered features include:
 
@@ -170,7 +161,8 @@ Then open the local address printed by Streamlit, normally
 │  
 ├── assets/
 │   ├── correlation-heatmap.png     # Notebook correlation analysis
-│   └── shap-summary.png            # Global SHAP feature-impact view
+│   ├── shap-summary.png            # Global SHAP feature-impact view
+│   └── workflow.svg                # Analysis workflow diagram
 ├── app.py                           # Streamlit prediction interface
 ├── IBM HR Employee Attrition.ipynb # Analysis, training, and evaluation
 ├── lgbm_model.pkl                   # Serialized application model

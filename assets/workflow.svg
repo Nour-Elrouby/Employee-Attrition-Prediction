@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="310" viewBox="0 0 1000 310" role="img" aria-labelledby="title desc">
+  <title id="title">Employee attrition analysis workflow</title>
+  <desc id="desc">Eight steps from IBM HR data through exploration, feature engineering, model training, SHAP explanations, and the Streamlit application.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080b12"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b7cfa"/>
+      <stop offset="1" stop-color="#4667e8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7f93db"/>
+    </marker>
+    <style>
+      .card { fill: #151d2d; stroke: #35425a; stroke-width: 1.5; }
+      .card-accent { fill: url(#accent); stroke: #7590ff; stroke-width: 1.5; }
+      .label { fill: #f8fafc; font: 600 15px 'Segoe UI', Arial, sans-serif; text-anchor: middle; }
+      .number { fill: #f4b740; font: 700 12px 'Segoe UI', Arial, sans-serif; text-anchor: middle; }
+      .connector { fill: none; stroke: #7f93db; stroke-width: 2; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1000" height="310" rx="18" fill="url(#background)"/>
+
+  <path class="connector" d="M245 91 H280"/>
+  <path class="connector" d="M475 91 H510"/>
+  <path class="connector" d="M705 91 H740"/>
+  <path class="connector" d="M838 128 V174"/>
+  <path class="connector" d="M740 216 H705"/>
+  <path class="connector" d="M510 216 H475"/>
+  <path class="connector" d="M280 216 H245"/>
+
+  <g filter="url(#shadow)">
+    <rect class="card-accent" x="50" y="54" width="195" height="74" rx="12"/>
+    <text class="number" x="70" y="76">01</text>
+    <text class="label" x="148" y="97">IBM HR data</text>
+
+    <rect class="card" x="280" y="54" width="195" height="74" rx="12"/>
+    <text class="number" x="300" y="76">02</text>
+    <text class="label" x="378" y="97">Explore &amp; clean</text>
+
+    <rect class="card" x="510" y="54" width="195" height="74" rx="12"/>
+    <text class="number" x="530" y="76">03</text>
+    <text class="label" x="608" y="97">Engineer features</text>
+
+    <rect class="card" x="740" y="54" width="195" height="74" rx="12"/>
+    <text class="number" x="760" y="76">04</text>
+    <text class="label" x="838" y="97">Train / test split</text>
+
+    <rect class="card" x="740" y="179" width="195" height="74" rx="12"/>
+    <text class="number" x="760" y="201">05</text>
+    <text class="label" x="838" y="222">Class balancing</text>
+
+    <rect class="card" x="510" y="179" width="195" height="74" rx="12"/>
+    <text class="number" x="530" y="201">06</text>
+    <text class="label" x="608" y="222">Model comparison</text>
+
+    <rect class="card" x="280" y="179" width="195" height="74" rx="12"/>
+    <text class="number" x="300" y="201">07</text>
+    <text class="label" x="378" y="222">SHAP explanations</text>
+
+    <rect class="card-accent" x="50" y="179" width="195" height="74" rx="12"/>
+    <text class="number" x="70" y="201">08</text>
+    <text class="label" x="148" y="222">Streamlit app</text>
+  </g>
+</svg>
