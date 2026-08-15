@@ -38,8 +38,8 @@ The project includes:
 |:---:|:---:|:---:|:---:|
 | 1,470 | 35 | 237 | 16.1% |
 
-The IBM HR Analytics sample contains demographic, role, compensation, satisfaction,
-travel, and employment-history attributes. The prediction target is `Attrition`, where
+The IBM HR Analytics sample contains demographic,role,compensation,satisfaction,
+travel,and employment-history attributes.The prediction target is `Attrition`, where
 `Yes` indicates that an employee left.
 
 ## Analysis workflow
@@ -117,35 +117,6 @@ it.
 > collects only eight inputs and fills uncollected model features with zero. Its displayed
 > percentage should therefore be treated as a model score—not a calibrated probability.
 
-## Quick start
-
-### 1. Create an environment
-
-```bash
-python -m venv .venv
-```
-
-Activate it on Windows:
-
-```powershell
-.venv\Scripts\Activate.ps1
-```
-
-### 2. Install dependencies
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-### 3. Run the application
-
-```bash
-streamlit run app.py
-```
-
-Then open the local address printed by Streamlit, normally
-`http://localhost:8501`.
-
 ## Project structure
 
 ```text
@@ -157,7 +128,7 @@ Then open the local address printed by Streamlit, normally
 │   ├── shap-summary.png            # Global SHAP feature-impact view
 │   └── workflow.svg                # Analysis workflow diagram
 ├── app.py                           # Streamlit prediction interface
-├── IBM HR Employee Attrition.ipynb # Analysis, training, and evaluation
+├── IBM HR Employee Attrition.ipynb # Analysis,training,and evaluation
 ├── lgbm_model.pkl                   # Serialized application model
 ├── model_columns.pkl                # Expected model feature order
 ├── requirements.txt                 # Application dependencies
@@ -172,9 +143,3 @@ Then open the local address printed by Streamlit, normally
 - Add probability calibration and calibration-curve reporting
 - Report cross-validation confidence intervals and subgroup fairness metrics
 - Add schema validation, automated tests, and model/version metadata
-
----
-
-<div align="center">
-Built for transparent experimentation with people analytics and explainable ML.
-</div>
