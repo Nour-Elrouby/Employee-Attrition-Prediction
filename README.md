@@ -62,7 +62,7 @@ relationships are expected among `JobLevel`, `MonthlyIncome`, `TotalWorkingYears
 ![Correlation heatmap](assets/correlation-heatmap.png)
 
 > Correlation describes association, not causation. It should be used to understand
-> feature structure and redundancy—not as evidence that one employee characteristic
+> feature structure and redundancy not as evidence that one employee characteristic
 > causes attrition.
 
 ## Model comparison
