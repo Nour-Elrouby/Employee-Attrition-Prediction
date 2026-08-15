@@ -1,12 +1,5 @@
 # Employee Attrition Prediction
 
----
-
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![LightGBM](https://img.shields.io/badge/LightGBM-ML-5B7CFA)](https://lightgbm.readthedocs.io/)
-[![SHAP](https://img.shields.io/badge/SHAP-XAI-F4B740)](https://shap.readthedocs.io/)
-
 A machine-learning application for analyzing employee attrition and estimating
 workforce risk. It compares sampling and classification strategies, explains model
 behavior with SHAP, and provides an interactive Streamlit prediction interface.
