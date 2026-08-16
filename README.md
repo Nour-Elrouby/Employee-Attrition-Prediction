@@ -5,7 +5,7 @@ workforce risk. It compares sampling and classification strategies, explains mod
 behavior with SHAP, and provides an interactive Streamlit prediction interface.
 
 > [!IMPORTANT]
-> Attrition scores should support—not replace—responsible HR review and human judgment.
+> Attrition scores should support not replace responsible HR review and human judgment.
 > Never use this prototype as the sole basis for employment decisions, and validate its
 > fairness, calibration, privacy, and legal suitability before real-world use.
 
