@@ -108,7 +108,7 @@ it.
 > The deployed app loads a LightGBM model refitted on SMOTE-balanced data, while the
 > notebook's strongest recorded test result is Logistic Regression + SMOTE. The app also
 > collects only eight inputs and fills uncollected model features with zero. Its displayed
-> percentage should therefore be treated as a model score—not a calibrated probability.
+> percentage should therefore be treated as a model score not a calibrated probability.
 
 ## Project structure
 
